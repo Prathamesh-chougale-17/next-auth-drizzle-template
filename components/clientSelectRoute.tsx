@@ -1,3 +1,4 @@
+"use client";
 import React, { ForwardRefExoticComponent, RefAttributes } from "react";
 import { usePathname } from "next/navigation";
 import { LucideProps } from "lucide-react";
