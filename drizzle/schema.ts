@@ -29,7 +29,7 @@ import { env } from "@/env";
     email: text("email").unique(),
     emailVerified: timestamp("emailVerified", { mode: "date" }),
     image: text("image"),
-    roles: text("roles").$type<Role>().default(Role.USER),
+    role: text("role").$type<Role>().default(Role.USER),
   })
    
   export const accounts = pgTable(
